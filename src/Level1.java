@@ -39,10 +39,6 @@ public class Level1 {
             }
         return true;
         }
-    public static void main(String[] args) {
-        String S1 = "12334 23434 03434";
-        String S2 = "34 98";
-        System.out.println(TankRush(3, 5, S1, 2, 2, S2));
-    }
 }
+
 
