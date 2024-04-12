@@ -29,7 +29,7 @@ public class Level1 {
 
     public static boolean coincidence (int H1, int H2, int x, int startIndex, int y, String[] art,  ArrayList<String> tanks) {
         if (x + H2 > H1) return false;
-        for (int z = x; z < H2; z++, y++) {
+        for (int z = x; z <= H2; z++, y++) {
             StringBuilder string = new StringBuilder();
             string.insert(0, art[z]);
             string.delete(0, startIndex);
@@ -39,5 +39,10 @@ public class Level1 {
             }
         return true;
         }
+    public static void main(String[] args) {
+        String S1 = "12334 23434 03434";
+        String S2 = "34 98";
+        System.out.println(TankRush(3, 5, S1, 2, 2, S2));
+    }
 }
 
